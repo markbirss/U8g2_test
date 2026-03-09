@@ -51,6 +51,11 @@ void loop() {
   display.setTextColor(1);      // 1 = White/On for monochrome
   display.setTextSize(2);
   display.print("Adafruit GFX");
+
+  display.drawLine(1,1, 298,1, 1);
+  display.drawLine(1,1, 1,398, 1);
+  display.drawLine(298,398,1,398, 1);
+  display.drawLine(298,398,298,1, 1);
   
   display.drawRect(10, 50, 100, 50, 1);       // Draw a rectangle
   display.fillCircle(200, 100, 40, 1);       // Draw a filled circle
