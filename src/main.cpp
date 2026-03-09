@@ -14,9 +14,12 @@
 #define DISP_DC    6
 #define DISP_RESET 10
 
-//U8G2_ST7305_168X384_F_4W_HW_SPI u8g2(U8G2_R0, /* cs=*/ 17, /* dc=*/ 20, /* reset=*/ 15);
+// 2. U8G2 CONSTRUCTOR for ST7305 300x400
+// Use 'F' for Full Buffer mode (requires ~15KB RAM)
+U8G2_ST7305_300X400_F_4W_HW_SPI u8g2(U8G2_R0, DISP_CS, DISP_DC, DISP_RESET);
 
-U8G2_ST7305_300X400_F_4W_HW_SPI u8g2(U8G2_R0, /* cs=*/ 5, /* dc=*/ 6, /* reset=*/ 10);
+// 2.0"
+//U8G2_ST7305_168X384_F_4W_HW_SPI u8g2(U8G2_R0, DISP_CS, DISP_DC, DISP_RESET);
 
 // 3. THE BRIDGE CLASS
 // This allows Adafruit_GFX to draw directly into the U8g2 buffer
