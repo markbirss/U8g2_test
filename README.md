@@ -12,3 +12,5 @@ cd U8g2_test
 
 pio run -e rp2040-zero -t upload
 ```
+<img width="572" height="873" alt="image" src="https://github.com/user-attachments/assets/24f0f37a-150d-4138-b207-2e93b7081213" />
+
