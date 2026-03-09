@@ -1,4 +1,4 @@
-# U8g2_text
+# U8g2_test
 
 Waveshare RP2040_ZERO
 
